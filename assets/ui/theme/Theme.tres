@@ -1,0 +1,42 @@
+[gd_resource type="Theme" load_steps=5 format=2]
+
+[ext_resource path="res://assets/ui/theme/lightbox.tres" type="StyleBox" id=1]
+[ext_resource path="res://assets/font/dogicapixel.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+size = 8
+use_filter = true
+extra_spacing_top = 1
+extra_spacing_bottom = 1
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.921569, 0.94902, 0.980392, 1 )
+border_color = Color( 0.733333, 0.733333, 0.733333, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color( 0, 0, 0, 0.486275 )
+shadow_size = 2
+shadow_offset = Vector2( 1, 1 )
+
+[resource]
+default_font = SubResource( 3 )
+Button/colors/font_color = Color( 0.0745098, 0.333333, 0.176471, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.380392, 0.886275, 0.580392, 1 )
+Button/colors/font_color_hover = Color( 0.0745098, 0.333333, 0.176471, 1 )
+Button/colors/font_color_pressed = Color( 0.0745098, 0.333333, 0.176471, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = SubResource( 3 )
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = SubResource( 5 )
+Button/styles/normal = ExtResource( 1 )
+Button/styles/pressed = null
+Label/colors/font_color = Color( 0.156863, 0, 0.0156863, 1 )
+Panel/styles/panel = ExtResource( 1 )
+RichTextLabel/colors/default_color = Color( 0.156863, 0, 0.0156863, 1 )
+RichTextLabel/colors/font_color_selected = Color( 0.380392, 0.886275, 0.580392, 1 )
+RichTextLabel/colors/selection_color = Color( 0.380392, 0.886275, 0.580392, 0.670588 )

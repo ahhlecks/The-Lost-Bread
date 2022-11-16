@@ -1,0 +1,218 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/ui/theme/BigUITheme.tres" type="Theme" id=1]
+[ext_resource path="res://scenes/PauseMenu.gd" type="Script" id=2]
+[ext_resource path="res://assets/ui/stat_bar_empty.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/stat_bar.png" type="Texture" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 260.0
+margin_bottom = 596.0
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 252.0
+margin_bottom = 32.0
+text = "You are a..."
+
+[node name="Type" type="Label" parent="Panel"]
+margin_left = 4.0
+margin_top = 28.0
+margin_right = 252.0
+margin_bottom = 56.0
+align = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+margin_left = 68.0
+margin_top = 44.0
+margin_right = 180.0
+margin_bottom = 164.0
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+margin_left = 4.0
+margin_top = 172.0
+margin_right = 253.0
+margin_bottom = 588.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Freshness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_right = 249.0
+margin_bottom = 16.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Freshness"]
+margin_top = 1.0
+margin_right = 124.0
+margin_bottom = 15.0
+text = "Freshness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Freshness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Chewiness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 24.0
+margin_right = 249.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Chewiness"]
+margin_top = 1.0
+margin_right = 124.0
+margin_bottom = 15.0
+text = "Chewiness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Chewiness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Toastiness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 48.0
+margin_right = 249.0
+margin_bottom = 64.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Toastiness"]
+margin_top = 1.0
+margin_right = 134.0
+margin_bottom = 15.0
+text = "Toastiness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Toastiness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Butteriness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 72.0
+margin_right = 249.0
+margin_bottom = 88.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Butteriness"]
+margin_top = 1.0
+margin_right = 144.0
+margin_bottom = 15.0
+text = "Butteriness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Butteriness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Sweetness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 96.0
+margin_right = 249.0
+margin_bottom = 112.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Sweetness"]
+margin_top = 1.0
+margin_right = 126.0
+margin_bottom = 15.0
+text = "Sweetness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Sweetness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Saltiness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 120.0
+margin_right = 249.0
+margin_bottom = 136.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Saltiness"]
+margin_top = 1.0
+margin_right = 116.0
+margin_bottom = 15.0
+text = "Saltiness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Saltiness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Meatiness" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 144.0
+margin_right = 249.0
+margin_bottom = 160.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Meatiness"]
+margin_top = 1.0
+margin_right = 122.0
+margin_bottom = 15.0
+text = "Meatiness"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Meatiness"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
+
+[node name="Temp" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 168.0
+margin_right = 249.0
+margin_bottom = 184.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Temp"]
+margin_top = 1.0
+margin_right = 60.0
+margin_bottom = 15.0
+text = "Temp"
+
+[node name="TextureProgress" type="TextureProgress" parent="Panel/VBoxContainer/Temp"]
+margin_left = 148.0
+margin_right = 249.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 101, 0 )
+size_flags_horizontal = 10
+step = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 4 )
